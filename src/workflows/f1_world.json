@@ -1,0 +1,292 @@
+{
+  "job_id": 987601548643664,
+  "new_settings": {
+    "name": "f1_world",
+    "email_notifications": {
+      "no_alert_for_skipped_runs": false
+    },
+    "webhook_notifications": {},
+    "timeout_seconds": 0,
+    "max_concurrent_runs": 1,
+    "tasks": [
+      {
+        "task_key": "bronze_circuits",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "circuits"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_constructor_results",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "constructor_results"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_constructor_standings",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "constructor_standings"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_constructors",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "constructors"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_driver_standings",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "driver_standings"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_drivers",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "drivers"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_lap_times",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "lap_times"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_pit_stops",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "pit_stops"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_qualifying",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "qualifying"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_races",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "races"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_results",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "results"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_seasons",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "seasons"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_sprint_results",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "sprint_results"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "bronze_status",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/bronze/Ingestion",
+          "base_parameters": {
+            "tableName": "status"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "silver_batch",
+        "depends_on": [
+          {
+            "task_key": "bronze_races"
+          },
+          {
+            "task_key": "bronze_results"
+          },
+          {
+            "task_key": "bronze_status"
+          },
+          {
+            "task_key": "bronze_constructor_results"
+          },
+          {
+            "task_key": "bronze_constructor_standings"
+          },
+          {
+            "task_key": "bronze_pit_stops"
+          },
+          {
+            "task_key": "bronze_drivers"
+          },
+          {
+            "task_key": "bronze_driver_standings"
+          },
+          {
+            "task_key": "bronze_qualifying"
+          },
+          {
+            "task_key": "bronze_sprint_results"
+          },
+          {
+            "task_key": "bronze_circuits"
+          },
+          {
+            "task_key": "bronze_lap_times"
+          },
+          {
+            "task_key": "bronze_constructors"
+          },
+          {
+            "task_key": "bronze_seasons"
+          }
+        ],
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "src/silver/02_silver_batch",
+          "base_parameters": {
+            "tableName": "pit_stops"
+          },
+          "source": "GIT"
+        },
+        "existing_cluster_id": "1226-162256-vmw6ifb4",
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      }
+    ],
+    "git_source": {
+      "git_url": "https://github.com/rushinolk/databricks_f1_world.git",
+      "git_provider": "gitHub",
+      "git_branch": "main"
+    },
+    "queue": {
+      "enabled": true
+    },
+    "performance_target": "PERFORMANCE_OPTIMIZED"
+  }
+}
