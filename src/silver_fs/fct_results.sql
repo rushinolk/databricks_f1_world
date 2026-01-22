@@ -1,0 +1,1 @@
+select * from silver.f1_world.constructors
